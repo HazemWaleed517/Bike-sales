@@ -1,72 +1,67 @@
-# ============================================================
-# project_metadata.yml
-# PURPOSE: Machine-readable project metadata only.
-# This file contains NO narrative, NO insights, NO analysis.
-# It exists for indexing, automation, and portfolio cataloging.
-# ============================================================
-
+============================================================
+project_metadata.yml
+PURPOSE: Machine-readable project metadata only.
+This file contains NO narrative, NO insights, NO analysis.
+It exists for indexing, automation, and portfolio cataloging.
+============================================================
 project:
-  name: "[Project Title]"
-  slug: "[project-title-lowercase-hyphenated]"   # Used for folder names, URLs
+  name: "Bike Sales Analysis (Excel)"
+  slug: "bike-sales-analysis-excel"
   version: "1.0.0"
-  status: "completed"                             # Options: in-progress | completed | archived
-  last_updated: "YYYY-MM-DD"
+  status: "completed"
+  last_updated: "2026-09-27"
 
-author:
-  name: "[Your Full Name]"
-  role: "[Your Role or Title]"
-  github: "[github_username]"
-  linkedin: "[linkedin_profile_url]"
-  email: "[optional]"
+  author:
+    name: "[Hazem Waleed]"
+    role: "Data Analyst"
+    github: "[HazemWaleed517]"
+    linkedin: "[https://www.linkedin.com/in/7azem-waleed-ai/?isSelfProfile=true]"
 
-project_type:
-  primary: "[e.g., exploratory-analysis]"        # See taxonomy below
-  secondary:
-    - "[e.g., dashboard]"
-    - "[e.g., data-pipeline]"
+  project_type:
+    primary: "exploratory-analysis"
+    secondary:
+      - "dashboard"
+      - "data-cleaning"
 
-# PROJECT TYPE TAXONOMY (pick what applies):
-# exploratory-analysis | sql-analysis | dashboard | data-pipeline
-# predictive-model | data-cleaning | reporting | visualization
-# end-to-end | automation | other
+  domain: "retail / sales"
 
-domain: "[e.g., finance / healthcare / marketing / operations / education / other]"
+  tools:
+    languages:
+      - "Excel"
+    libraries: []
+    platforms: []
+    visualization:
+      - "Excel PivotTables"
+      - "Excel PivotCharts"
 
-tools:
-  languages:
-    - "[e.g., Python 3.11]"
-    - "[e.g., SQL]"
-  libraries:
-    - "[e.g., pandas 2.0]"
-    - "[e.g., matplotlib 3.7]"
-  platforms:
-    - "[e.g., GitHub]"
-    - "[e.g., Google Colab]"
-  visualization:
-    - "[e.g., Power BI]"
-    - "[e.g., Tableau]"
-    - "[e.g., Plotly]"
+  data:
+    sources:
+      - name: "Bike Sales Raw Data"
+        type: "csv"
+        access: "public"
+        row_count_approx: 752
+       
+  outputs:
+    - type: "csv"
+      path: "raw_data.xlsx"
+      description: "Raw, uncleaned bike sales transactions"
+    - type: "csv"
+      path: "Processed_data_.xlsx"
+      description: "Cleaned dataset with calculated fields (Revenue, Total_Cost, Profit, Profit_Margin_%, Age_Group)"
+    - type: "dashboard"
+      path: "Dashboard.xlsx"
+      description: "PivotTable/PivotChart dashboard analyzing revenue, profit, and orders by time, country, age group, and product"
+    - type: "report"
+      path: "Professional_Analytical_Questions_Report.docx"
+      description: "Structured framework of analytical questions covering performance, customer behavior, profitability, seasonality, geography, and data quality"
 
-data:
-  sources:
-    - name: "[Source name]"
-      type: "[csv / api / database / web-scrape / manual / public-dataset]"
-      access: "[public / private / simulated / anonymized]"
-  row_count_approx: "[e.g., 50000]"
-  date_range:
-    start: "YYYY-MM-DD"
-    end: "YYYY-MM-DD"
+  dependencies:
+    file: "none"
+    notes: "Built entirely in Microsoft Excel using PivotTables, PivotCharts, and formulas"
 
-outputs:
-  - type: "[notebook / dashboard / report / csv / script / slides]"
-    path: "[relative/path/to/output]"
-    description: "[One-line description]"
-
-dependencies:
-  file: "[requirements.txt / environment.yml / packages.R / none]"
-  notes: "[Any setup instructions or environment caveats]"
-
-tags:
-  - "[keyword-1]"
-  - "[keyword-2]"
-  - "[keyword-3]"
+  tags:
+    - "excel"
+    - "pivot-tables"
+    - "sales-analysis"
+    - "profitability"
+    - "customer-segmentation"
