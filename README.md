@@ -249,7 +249,7 @@ Junior Data Analyst
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/7azem-waleed-ai/?isSelfProfile=true)
 - 💼 [GitHub — https://github.com/HazemWaleed517)
-- 📧 reem.aweys21@gmail.com
+- 📧 hazemw185@gmail.com
 
 ---
 
